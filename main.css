@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+body {
+    overflow-x:hidden ;
+    height: 100%;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    background-image: url("images/worsh4.jpg");
+    background-size: cover;
+}
+
+#navbarNav {
+    display: flex;
+    justify-content: center;
+
+}
+
+a {
+    color: aqua!important;
+}
+li a:hover, li a:focus {
+    color: azure!important;
+    background-color: black!important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 600px) {
+    /* THIS MAKES THE SIGN UP CONTAINER FIT THE FULL SCREEN WIDTH WHEN THE SCREEN SIZE IS LESS THAN 500PX  */
+    #audio {
+        width: 20%;
+        min-width: 300px;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    /* THIS MAKES THE SIGN UP CONTAINER FIT THE FULL SCREEN WIDTH WHEN THE SCREEN SIZE IS LESS THAN 500PX  */
+    .tracksContainer {
+        width: 100%;
+        max-width: 400px;
+        margin-top: 0px;
+        height: 70px;
+    }
+    #picFrame {
+        width: 200px;
+        height: 200px;
+        margin-top: 10px;
+        margin-right: auto;
+    }
+
+    #audioContainer {
+        margin-top: 9px;
+    }
+
+    #audio {
+        margin-top: 0px;
+        position: static;
+        transform: translate(0%, 0%);
+        margin: auto;
+        width: 100%;
+    }
+
+    #sectionLeft {
+        display: none;
+    }
+    #sectionRight {
+        display: none;
+    }
+
+}
+
+
+@media only screen and (max-width: 1500px) {
+    /* THIS MAKES THE SIGN UP CONTAINER FIT THE FULL SCREEN WIDTH WHEN THE SCREEN SIZE IS LESS THAN 500PX  */
+    .wrapper {
+        width: 100%;
+    }
+    #pawanpic{
+        height: 250px;
+        width: 250px;
+    }
+    #paw{
+        text-align: center;
+        display: inline;
+        margin-right: 10%;
+
+    }
+    .ff{
+        font-size: 2em;
+    }
+    #uu {
+        width: 80%;
+        text-align: center;
+    }
+    #down{
+        padding: 0 15%;
+    }
+    #pawan h1{
+        padding-top: 7%;
+        padding-bottom: inherit;
+    }
+    #imgbox{
+        max-height: 600px;
+        width: 100% ;
+
+    }
+    #mainPage{
+        mix-blend-mode: hard-light;
+        max-height: 600px;
+        width: 100% ;
+
+    }
+    .titlee {
+        text-align: center;
+        left: 10%;
+        font-size: 2.5em;
+    }
+
+}
+
+
+
+
+
+
+
+
+
