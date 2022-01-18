@@ -24,13 +24,56 @@ body {
 }
 
 a {
-    color: aqua!important;
+    color: rgb(238, 255, 0)!important;
+    text-align: center;
+}
+
+.motto {
+    text-align: center;
+    font-size: 15px;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
 }
 li a:hover, li a:focus {
     color: azure!important;
     background-color: black!important;
+    background-size: 300px 100px!important;
 }
 
+.music-icons {
+    position: absolute;
+    bottom: 50px;
+    right: 500px;
+}
+.music {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+footer {
+    bottom : 2px;
+    height : 30px;
+    margin-top : 40px;
+    text-align: center;
+    vertical-align: middle;
+    position:fixed;
+    width:100%;
+    color: white;
+    font-weight: 30;
+}
+
+.fa-facebook {
+    color: rgb(82, 82, 253);
+}
+.fa-instagram {
+    color: palevioletred;
+}
+.fa-whatsapp {
+    color: rgb(85, 255, 85);
+}
 
 
 

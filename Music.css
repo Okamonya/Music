@@ -1,431 +1,87 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
-    color: aqua;
 }
-
+html{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
 body {
-    background-image: url(Images/worsh4.jpg);
+    overflow-x:hidden ;
+    height: 100%;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    background-image: url("images/worsh4.jpg");
     background-size: cover;
 }
 
-nav {
+#navbarNav {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    height: 70px;
-    padding: 0 100px;
+    justify-content: center;
+
 }
 
-nav .logo {
-    color: #fff;
-    font-size: 30px;
-    font-weight: 600;
-    letter-spacing: -1px;
+a {
+    color: rgb(238, 255, 0)!important;
+    text-align: center;
 }
 
-nav .logo span {
-    color: grey;
-}
-
-nav .logo span .motto {
-    font-size: small;
-}
-
-nav .nav-items {
-    display: flex;
-    flex: 1;
-    justify-content: flex-end;
-    padding: 0 0 0 40px;
-}
-
-nav .nav-items li {
-    list-style: none;
-    font-size: 18px;
-    padding: 0 15px;
-}
-
-nav .nav-items li a {
-    font-size: 18px;
-    font-weight: 500;
-    text-decoration: none;
-}
-
-nav .nav-items li a:hover {
-    color: #ff3d00;
-}
-
-nav form {
-    display: flex;
-    height: 40px;
-    padding: 2px;
-    background: #1e232b;
-    min-width: 18% !important;
-    border-radius: 2px;
-    border: 1px solid rgba(155, 155, 155, 0.2);
-}
-
-nav form .search-data {
+.motto {
+    text-align: center;
+    font-size: 15px;
     width: 100%;
-    height: 100%;
-    padding: 0 10px;
-    color: #fff;
-    font-size: 17px;
-    border: none;
-    font-weight: 500;
-    background: none;
+    overflow: hidden;
+    white-space: nowrap;
+}
+li a:hover, li a:focus {
+    color: azure!important;
+    background-color: black!important;
+    background-size: 300px 100px!important;
 }
 
-nav form button {
-    padding: 0 15px;
-    color: #fff;
-    font-size: 17px;
-    background: #ff3d00;
-    border: none;
-    border-radius: 2px;
-    cursor: pointer;
-}
-
-nav form button:hover {
-    background: #e63600;
-}
-
-nav .menu-icon,
-nav .cancel-icon,
-nav .search-icon {
-    width: 40px;
-    text-align: center;
-    margin: 0 50px;
-    font-size: 18px;
-    color: #fff;
-    cursor: pointer;
-    display: none;
-}
-
-nav .menu-icon span,
-nav .cancel-icon,
-nav .search-icon {
-    display: none;
-}
-
-section {
+.songs {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
-}
 
-.container {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: center;
-    margin: 20px;
 }
-
-.container .card {
+.music iframe{
     position: relative;
-    width: 260px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     background: rgba(255, 255, 255, 0.06);
     box-shadow: 1px solid rgba(0, 0, 0, 0.2);
-    margin: 2px;
+    margin: 20px;
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     display: flex;
     justify-content: center;
     align-items: center;
     backdrop-filter: blur(10px) saturate(-100%);
+    
 }
 
-.container .card .content {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    opacity: 0.7;
-    transition: 0.5s;
-}
-
-.container .card:hover .content {
-    opacity: 1;
-}
-
-.container .card .content .contentbx h3 {
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 500;
-    font-size: 18px;
+footer {
+    bottom : 2px;
+    height : 30px;
+    margin-top : 40px;
     text-align: center;
-    margin: 20px 0 10px;
-    line-height: 1.1em;
+    vertical-align: middle;
+    position:fixed;
+    width:100%;
+    color: white;
+    font-weight: 30;
 }
 
-.container .card .content .contentbx h3 {
-    text-transform: initial;
-    font-size: 12;
-    font-weight: 300;
+.fa-facebook {
+    color: rgb(82, 82, 253);
 }
-
-.container .card .content .imgbx {
-    position: relative;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 5px solid;
+.fa-instagram {
+    color: palevioletred;
 }
-
-.container .card .content .imgbx img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.fa-whatsapp {
+    color: rgb(85, 255, 85);
 }
-
-.social {
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    position: fixed;
-    z-index: 100;
-}
-
-.social ul {
-    padding: initial;
-}
-
-.social ul li {
-    height: 30px;
-    width: 20px;
-    list-style-type: none;
-    padding-left: 12px;
-    padding-top: 6px;
-    margin-top: 5px;
-    color: #fff;
-}
-
-.linkedin {
-    background: #007bb5;
-}
-
-.social ul li:hover {
-    padding-left: 30px;
-    width: 80%;
-    transition: 1s;
-}
-/* play button */
-.icon {
-    border: 0;
-    background: transparent;
-    box-sizing: border-box;
-    width: 0;
-    height: 7px;
-
-    border-color: transparent transparent transparent crimson;
-    transition: 100ms all ease;
-    cursor: pointer;
-
-
-    /* play state */
-
-    border-width: 10px 0 10px 12px;
-}
-.paused {
-
-    border-width: 0px 0 0px 6px;
-}
-
-.icon:hover {
-    border-color: transparent transparent transparent rgb(252, 3, 52);
-    font-size:3em;
-    transition: 1s ease-out;
-    transform: rotate(0deg) skew(0deg) translate(-1rem, -10px);
-}
-
-
-/* Aplayer styling */
-#aplayer {
-    color: crimson;
-    position: fixed;
-    bottom: -100%;
-    left: 0;
-    width: 100%;
-    margin: 0;
-    box-shadow: 0 -2px 2px crimson;
-    background: rgba(255, 255, 255, 0.06);
-    backdrop-filter: blur(10px) saturate(-100%);
-    transition: all ease 0.5s;
-}
-
-#aplayer.showPlayer {
-    bottom: 0;
-}
-
-.span {
-    font-size: 16px;
-}
-
-.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-loaded {
-    background: crimson;
-    height: 4px;
-}
-
-.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played {
-    height: 4px;
-    background-color: crimson !important;
-}
-
-.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played .aplayer-thumb {
-    background-color: crimson !important;
-}
-
-.aplayer .aplayer-icon {
-    width: 20px;
-    height: 20px;
-}
-
-.aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon path {
-    fill: crimson;
-}
-
-.aplayer .aplayer-info .aplayer-music {
-    margin-bottom: 5px;
-}
-
-@media (max-width: 1245px) {
-    nav {
-        padding: 0 50px;
-    }
-}
-
-@media (max-width: 1140px) {
-    nav {
-        padding: 0px;
-    }
-
-    nav .logo {
-        flex: 2;
-        text-align: center;
-    }
-
-    nav .nav-items {
-        position: fixed;
-        z-index: 99;
-        top: 70px;
-        width: 100%;
-        left: -100%;
-        height: 100%;
-        padding: 10px 50px 0 50px;
-        text-align: center;
-        background: #14181f;
-        display: inline-block;
-        transition: left 0.3s ease;
-    }
-
-    nav .nav-items.active {
-        left: 0px;
-    }
-
-    nav .nav-items li {
-        line-height: 40px;
-        margin: 30px 0;
-    }
-
-    nav .nav-items li a {
-        font-size: 20px;
-    }
-
-    nav form {
-        position: absolute;
-        top: 80px;
-        right: 50px;
-        opacity: 0;
-        pointer-events: none;
-        transition: top 0.3s ease, opacity 0.1s ease;
-    }
-
-    nav form.active {
-        top: 95px;
-        opacity: 1;
-        pointer-events: auto;
-    }
-
-    nav form:before {
-        position: absolute;
-        content: "";
-        top: -13px;
-        right: 0px;
-        width: 0;
-        height: 0;
-        z-index: -1;
-        border: 10px solid transparent;
-        border-bottom-color: #1e232b;
-        margin: -20px 0 0;
-    }
-
-    nav form:after {
-        position: absolute;
-        content: '';
-        height: 60px;
-        padding: 2px;
-        background: #1e232b;
-        border-radius: 2px;
-        min-width: calc(100% + 20px);
-        z-index: -2;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    nav .menu-icon {
-        display: block;
-    }
-
-    nav .search-icon,
-    nav .menu-icon span {
-        display: block;
-    }
-
-    nav .menu-icon span.hide,
-    nav .search-icon.hide {
-        display: none;
-    }
-
-    nav .cancel-icon.show {
-        display: block;
-    }
-}
-
-section {
-    position: relative;
-}
-
-@media (max-width: 980px) {
-    nav .menu-icon,
-    nav .cancel-icon,
-    nav .search-icon {
-        margin: 0 20px;
-    }
-
-    nav form {
-        right: 30px;
-    }
-}
-
-@media (max-width: 350px) {
-    nav .menu-icon,
-    nav .cancel-icon,
-    nav .search-icon {
-        margin: 0 10px;
-        font-size: 16px;
-    }
-}
-
-

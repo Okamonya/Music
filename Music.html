@@ -1,59 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://use.fontawesome.com/24d328027b.js"></script>
-    <link rel="stylesheet" type="text/css" href="Music.css">
-    <title>Music</title>
+    <!-- for mobile view -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- icon pack -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/e2647fde74.js"></script>
+    <!-- font pack -->
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <!-- my css -->
+    <link rel="stylesheet" type="text/css" media="screen" href="Music.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Jame Mae</title>
 </head>
+
 <body>
-<nav>
-    <div class="menu-icon">
-        <span class="fa fa-bars"></span>
+<nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+    <a class="navbar-brand" href="#">James<span> Mae</span><span><div class="motto" id="motto">Worshipper | Songwriter | Singer</div></span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="Main.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Music.html">Music</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Worship Concert</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Store</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="Bio.html">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="Bio.html">BIO</a>
+            </li>
+        </ul>
     </div>
-    <div class="logo"><a href="#">James<span> Mae</span></a><span><div class="motto"
-                                                                       id="motto">I Live For You.</div></span>
-    </div>
-    <div class="nav-items">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Music</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Concert</a></li>
-    </div>
-    <div class="search-icon">
-        <span class="fa fa-search"></span>
-    </div>
-    <div class="cancel-icon">
-        <span class="fa fa-times"></span>
-    </div>
-    <form action="#">
-        <input type="search" class="search-data" placeholder="Search" required>
-        <button type="submit" class="fa fa-search"></button>
-    </form>
 </nav>
-<section>
-    <div class="container">
-        <div class="card">
-            <div class="content">
-                <div class="imgbx">
-                    <img src="images/worsh4.jpg" alt="">
-                </div>
-                <div class="contentbx">
-                    <h3>Musician <br><span>song name</span></h3>
-                </div>
-            </div>
-        </div>
+<div class="songs">
+    <div class="music">
+        <iframe src="https://www.youtube.com/embed/L_18QgHJwn8?fs=0" ></iframe>
     </div>
-</section>
-<div class="social">
-    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-    <li><a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
-    <li><a href="#"><i class="fa fa-spotify" aria-hidden="true"></i></a></li>
+    <div class="music">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/4N0Ff5b1aKY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="music">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/nAJOIUbsn5M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
 </div>
-<script src="music.js"></script>
+
+
+
+<Footer>© 2021 James Mae. All Rights Reserved.
+    <span>
+        <a href="#"><i class="fa fa-facebook" ></i></a>
+        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+    </span>
+</Footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+<script src="main.js"></script>
 </body>
+
 </html>
